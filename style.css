@@ -1,0 +1,293 @@
+/*
+Theme Name: zanca_it
+Version: 1.0
+Description: A child theme of Twenty Seventeen
+Template: twentyseventeen
+Author: Amministratore
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+
+.boxi-container{
+
+
+
+}
+
+
+
+.left-box{
+    float:left;
+    padding:20px;
+    border:solid 1px lightgrey;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 8px;
+    background-image: url('assets/box_formazione.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left ;
+    display: table-cell;
+    vertical-align: bottom;
+    width:300px;
+    height: 400px;
+
+}
+
+.center-box{
+    margin:0 auto;
+    width:300px;
+    height: 400px;
+    padding:20px;
+    border:solid 1px lightgrey;
+    overflow:auto;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 8px;
+    background-image: url('assets/box_ecomm.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left ;
+}
+
+.right-box{
+    float:right;
+    width:300px;
+    height: 400px;
+    padding:20px;
+    border:solid 1px lightgrey;
+    overflow:auto;
+    margin: 0 auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 8px;
+    background-image: url('assets/box_supporto.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left ;
+
+}
+
+.sidebar-1 {
+    width:300px;
+    height: 400px;
+    padding:20px;
+    border:solid 1px black;
+    float: right;
+}
+
+.page-template-full-width .content-area {
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+@media screen and (min-width: 20em) { /* = 320px */
+
+    .boxi-rounded {
+
+
+        line-height:130px;
+        z-index: 3;
+        text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01;
+        color: white;
+        font: 2em Cuprum;
+        line-height:130px;
+
+
+
+    }
+
+    body {color:red;
+
+        font-size:0.8rem;
+
+
+        }
+
+    .left-box{
+        width:100%;
+        height: 260px;
+        background-position: top left;
+
+
+
+     }
+
+
+    .center-box{
+        width:100%;
+        height: 260px;
+        background-position: top left ;
+
+
+    }
+
+    .right-box{
+        width:100%;
+        height: 260px;
+        background-position: top left;
+
+
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 30em) { /* = 480px */
+
+    /* Typography */
+    /* Fix image alignment */
+    /* Site Branding */
+    /* Front Page */
+    /* Blog Index, Archive, Search */
+    /* Site Footer */
+    /* Gallery Columns */
+}
+
+@media screen and (min-width: 48em) { /* = 770px */
+
+    .boxi-rounded {
+
+
+        line-height:95px;
+        z-index: 3;
+
+
+    }
+
+    body {color:green;
+
+        font-size:0.8rem;
+    }
+
+    .left-box{
+        float:left;
+        width:210px;
+        background-position: top left;
+    }
+
+
+    .center-box{
+        margin:0 auto;
+        width:210px;
+        background-position: top left;
+
+    }
+
+    .right-box{
+        float:right;
+        width:210px;
+        background-position: top left;
+
+
+    }
+
+
+
+    /* Typography */
+    /* Layout */
+    /* Site Branding */
+    /* Navigation */
+    /* Main Navigation */
+    /* Scroll down arrow */
+    /* Front Page */
+    /* Front Page - Recent Posts */
+    /* Posts */
+    /* Blog, archive, search */
+    /* Entry content */
+    /* without sidebar */
+    /* with sidebar */
+    /* blog and archive */
+    /* Post formats */
+    /* Pages */
+    /* 404 page */
+    /* Comments */
+    /* Posts pagination */
+    /* Secondary */
+    /* Widgets */
+    /* Footer */
+    /* Gallery Columns */
+
+}
+
+@media screen and ( min-width: 67em ) {
+
+    body {color:black;
+    }
+    .boxi-rounded {
+
+
+        line-height:150px;
+        z-index: 3;
+
+
+    }
+
+
+    .left-box {
+
+        float:left;
+        width:300px;
+        height:300px;
+        background-color:white;
+
+     }
+
+
+    .center-box{
+        margin:0 auto;
+        width:300px;
+        height:300px;
+
+
+    }
+
+    .right-box{
+        float:right;
+        width:300px;
+        height:300px;
+
+
+    }
+
+
+
+    /* Layout */
+
+    /* Navigation */
+
+
+    /* Sticky posts */
+
+
+    /* Pagination */
+
+
+
+    /* Comments */
+
+
+}
+
+@media screen and ( min-width: 79em ) {
+
+
+
+
+}
+
+@media screen and ( max-width: 48.875em ) and ( min-width: 48em ) {
+
+
+}
