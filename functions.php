@@ -42,6 +42,17 @@ function arphabet_widgets_init() {
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
+/**
+ * Filter the excerpt length to 30 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function zanca_excerpt_length($length) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'zanca_excerpt_length');
+
 
 
 
