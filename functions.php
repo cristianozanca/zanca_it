@@ -49,7 +49,7 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
  * @return int (Maybe) modified excerpt length.
  */
 function zanca_excerpt_length($length) {
-	return 10;
+	return 50;
 }
 add_filter( 'excerpt_length', 'zanca_excerpt_length');
 

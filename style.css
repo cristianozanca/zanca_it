@@ -105,7 +105,7 @@ Author: Amministratore
 
     }
 
-    body {color:red;
+    body {/*color:red;*/
 
         font-size:0.8rem;
 
@@ -165,7 +165,7 @@ Author: Amministratore
 
     }
 
-    body {color:green;
+    body {/*color:green;*/
 
         font-size:0.8rem;
     }
@@ -222,7 +222,7 @@ Author: Amministratore
 
 @media screen and ( min-width: 67em ) {
 
-    body {color:black;
+    body {/*color:black;*/
     }
     .boxi-rounded {
 
