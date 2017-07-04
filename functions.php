@@ -15,8 +15,8 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'left box',
 		'id'            => 'left_box',
-		'before_widget' => '<div class="left-box">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class="left-box"><a href="training">',
+		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
 	) );
@@ -24,8 +24,8 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'right box',
 		'id'            => 'right_box',
-		'before_widget' => '<div class="right-box">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class="right-box"><a href="support">',
+		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
 	));
@@ -33,8 +33,8 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'center box',
 		'id'            => 'center_box',
-		'before_widget' => '<div class="center-box">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class="center-box"><a href="ecommerce">',
+		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
 	));
