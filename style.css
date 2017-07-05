@@ -7,6 +7,15 @@ Author: Amministratore
 */
 
 @import url(https://fonts.googleapis.com/css?family=Passion+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.main-navigation a {
+
+    font-family: roboto;
+    font-size: large;
+
+
+}
 
 .boxi-container{
 
