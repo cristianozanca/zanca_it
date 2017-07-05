@@ -186,12 +186,12 @@ Author: Amministratore
 
     body {/*color:green;*/
 
-        font-size:1.5rem;
+        font-size:1.2rem;
     }
 
     .left-box{
         float:left;
-        width:210px;
+        width:33%;
         height:120px;
         background-position: top left;
     }
@@ -199,7 +199,7 @@ Author: Amministratore
 
     .center-box{
         margin:0 auto;
-        width:210px;
+        width:33%;
         height:120px;
         background-position: top left;
 
@@ -207,7 +207,7 @@ Author: Amministratore
 
     .right-box{
         float:right;
-        width:210px;
+        width:33%;
         height:120px;
         background-position: top left;
         overflow:hidden
@@ -260,8 +260,7 @@ Author: Amministratore
     .left-box {
 
         float:left;
-        width:300px;
-        height:180px;
+        height:175px;
         background-color:white;
 
      }
@@ -269,16 +268,14 @@ Author: Amministratore
 
     .center-box{
         margin:0 auto;
-        width:300px;
-        height:180px;
+        height:175px;
 
 
     }
 
     .right-box{
         float:right;
-        width:300px;
-        height:180px;
+        height:175px;
         overflow:hidden
 
 
