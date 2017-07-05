@@ -88,6 +88,12 @@ Author: Amministratore
 /* Adjust positioning of edit shortcuts, override style in customize-preview.css */
 @media screen and (min-width: 20em) { /* = 320px */
 
+    .menu-toggle {
+        font-size: 1.500rem;
+        line-height: 0.5;
+    }
+
+
     .boxi-rounded {
 
 

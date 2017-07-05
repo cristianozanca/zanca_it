@@ -12,10 +12,12 @@ function zanca_enqueue_styles() {
  */
 function arphabet_widgets_init() {
 
+	$mysiteurl = get_site_url();
+
 	register_sidebar( array(
 		'name'          => 'left box',
 		'id'            => 'left_box',
-		'before_widget' => '<div class="left-box"><a href="training">',
+		'before_widget' => '<div class="left-box"><a href="' .$mysiteurl. '/training">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -24,7 +26,7 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'right box',
 		'id'            => 'right_box',
-		'before_widget' => '<div class="right-box"><a href="support">',
+		'before_widget' => '<div class="right-box"><a href="' .$mysiteurl. '/support">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -33,7 +35,7 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'center box',
 		'id'            => 'center_box',
-		'before_widget' => '<div class="center-box"><a href="ecommerce">',
+		'before_widget' => '<div class="center-box"><a href="' .$mysiteurl. '/ecommerce">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
