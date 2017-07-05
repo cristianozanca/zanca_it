@@ -171,6 +171,17 @@ Author: Amministratore
 
 @media screen and (min-width: 48em) { /* = 770px */
 
+    .navigation-top .wrap {
+
+        padding: inherit;
+    }
+
+    .main-navigation ul {
+
+        text-align: center;
+
+    }
+
     .boxi-rounded {
 
        font-size: 30px;
