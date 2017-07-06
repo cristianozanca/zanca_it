@@ -17,6 +17,11 @@ Author: Amministratore
 
 }
 
+.page-header {
+
+    padding-top: 2em;
+}
+
 .boxi-container{
 
 
@@ -97,6 +102,16 @@ Author: Amministratore
 /* Adjust positioning of edit shortcuts, override style in customize-preview.css */
 @media screen and (min-width: 20em) { /* = 320px */
 
+    .has-header-image.twentyseventeen-front-page .custom-header,
+    .has-header-video.twentyseventeen-front-page .custom-header,
+    .has-header-image.home.blog .custom-header,
+    .has-header-video.home.blog .custom-header {
+        display: table;
+        height: 300px;
+        height: 5vh;
+        width: 100%;
+    }
+
     .menu-toggle {
         font-size: 1.500rem;
         line-height: 0.5;
@@ -170,6 +185,13 @@ Author: Amministratore
 }
 
 @media screen and (min-width: 48em) { /* = 770px */
+
+
+
+
+    .page:not(.home) #content {
+    padding-top: 2em;
+}
 
     .navigation-top .wrap {
 
