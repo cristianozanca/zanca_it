@@ -115,6 +115,9 @@ Author: Amministratore
     .menu-toggle {
         font-size: 1.500rem;
         line-height: 0.5;
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
 
 
@@ -182,6 +185,10 @@ Author: Amministratore
     /* Blog Index, Archive, Search */
     /* Site Footer */
     /* Gallery Columns */
+
+    .site-branding {
+        padding: 1em 0;
+    }
 }
 
 @media screen and (min-width: 48em) { /* = 770px */
@@ -190,7 +197,7 @@ Author: Amministratore
 
 
     .page:not(.home) #content {
-    padding-top: 2em;
+    padding-top: 0.5em;
 }
 
     .navigation-top .wrap {
