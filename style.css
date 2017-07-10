@@ -120,6 +120,17 @@ Author: Amministratore
         right: 0px;
     }
 
+    .icon {
+        display: inline-block;
+        fill: currentColor;
+        height: 1em;
+        position: absolute;
+        top: -0.0625em;
+        vertical-align: text-top;
+        width: 1em;
+        right: 2px;
+    }
+
 
     .boxi-rounded {
 
@@ -199,6 +210,7 @@ Author: Amministratore
     .page:not(.home) #content {
     padding-top: 0.5em;
 }
+
 
     .navigation-top .wrap {
 
