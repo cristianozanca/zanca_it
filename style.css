@@ -17,6 +17,13 @@ Author: Amministratore
 
 }
 
+.search-form .search-submit .icon {
+    bottom: 3px;
+    position:relative;
+    top: calc(50% - 10px);
+       
+}
+
 .page-header {
 
     padding-top: 2em;
