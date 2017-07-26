@@ -17,7 +17,7 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'left box',
 		'id'            => 'left_box',
-		'before_widget' => '<div class="left-box"><a href="' .$mysiteurl. '/training">',
+		'before_widget' => '<div class="left-box expander_training"><!a href="' .$mysiteurl. '/training"><a href="#">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -26,7 +26,7 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'right box',
 		'id'            => 'right_box',
-		'before_widget' => '<div class="right-box"><a href="' .$mysiteurl. '/support">',
+		'before_widget' => '<div class="right-box expander_support"><!a href="' .$mysiteurl. '/support"><a href="#">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -35,7 +35,7 @@ function arphabet_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'center box',
 		'id'            => 'center_box',
-		'before_widget' => '<div class="center-box"><a href="' .$mysiteurl. '/ecommerce">',
+		'before_widget' => '<div class="center-box expander_ecommerce"><!a href="' .$mysiteurl. '/ecommerce"><a href="#">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -45,7 +45,7 @@ function arphabet_widgets_init() {
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 /**
- * Filter the excerpt length to 30 characters.
+ * Filter the excerpt length to 50 characters.
  *
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.

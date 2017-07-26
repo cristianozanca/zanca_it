@@ -17,11 +17,21 @@ Author: Amministratore
 
 }
 
+.subbox_ecommerce {
+
+    padding-bottom: 3em;
+}
+
+.ptsBlock {
+
+    min-height: 120px;
+}
+
 .search-form .search-submit .icon {
     bottom: 3px;
     position:relative;
     top: calc(50% - 10px);
-       
+
 }
 
 .page-header {

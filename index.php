@@ -30,7 +30,19 @@ get_header(); ?>
 			<?php dynamic_sidebar( 'center-box' ); ?>
 
 		</div>
+
 	<header class="page-header">
+
+		<div id="Page_Training" style="display: none;" class="content-area">Training</div>
+		
+		<div id="Page_Support" style="display: none;" class="content-area">Support</div>
+		
+		<div id="Page_Ecommerce" style="display: none;" class="subbox_ecommerce">
+			<?php echo do_shortcode("[supsystic-price-table id='8']");?>
+
+		</div>
+
+
 		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
 	</header>
 	<?php endif; ?>
@@ -70,5 +82,29 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
 </div><!-- .wrap -->
+<script>
+	jQuery(function () {
+		jQuery('.expander_training').live('click', function () {
+			jQuery('#Page_Training').slideToggle();
+			jQuery('#Page_Support').hide();
+			jQuery('#Page_Ecommerce').hide();
 
+		});
+	});
+	jQuery(function () {
+		jQuery('.expander_support').live('click', function () {
+			jQuery('#Page_Support').slideToggle();
+			jQuery('#Page_Training').hide();
+			jQuery('#Page_Ecommerce').hide();
+		});
+	});
+	jQuery(function () {
+		jQuery('.expander_ecommerce').live('click', function () {
+			jQuery('#Page_Ecommerce').slideToggle();
+			jQuery('#Page_Support').hide();
+			jQuery('#Page_Training').hide();
+		});
+	});
+
+</script>
 <?php get_footer();
