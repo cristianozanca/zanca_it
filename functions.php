@@ -19,14 +19,14 @@ function arphabet_widgets_init() {
 		'id'            => 'left_box',
 		'before_widget' => '<div class="left-box expander_training"><!a href="' .$mysiteurl. '/training"><a href="#">',
 		'after_widget'  => '</a></div>',
-		'before_title'  => '<h2 class="boxi-rounded">',
+		'before_title'  => '<h2 class="boxi-rounded ">',
 		'after_title'   => '</h2>',
 	) );
 
 	register_sidebar(array(
 		'name'          => 'right box',
 		'id'            => 'right_box',
-		'before_widget' => '<div class="right-box expander_support"><!a href="' .$mysiteurl. '/support"><a href="#">',
+		'before_widget' => '<div class="right-box expander_support "><!a href="' .$mysiteurl. '/support"><a href="#">',
 		'after_widget'  => '</a></div>',
 		'before_title'  => '<h2 class="boxi-rounded">',
 		'after_title'   => '</h2>',
@@ -37,7 +37,7 @@ function arphabet_widgets_init() {
 		'id'            => 'center_box',
 		'before_widget' => '<div class="center-box expander_ecommerce"><!a href="' .$mysiteurl. '/ecommerce"><a href="#">',
 		'after_widget'  => '</a></div>',
-		'before_title'  => '<h2 class="boxi-rounded">',
+		'before_title'  => '<h2 class="titolo-box-ecomm">',
 		'after_title'   => '</h2>',
 	));
 

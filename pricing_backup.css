@@ -1,0 +1,148 @@
+#{{table.view_id}} {
+{% if table.params.calc_width.val == 'table' %}
+width: {{ table.params.table_width.val }}{{ table.params.table_width_measure.val }};
+{% endif %}
+}
+#{{table.view_id}} .ptsCol {
+{% if table.params.calc_width.val == 'table' %}
+{% if table.params.enb_desc_col.val and table.params.enb_desc_col.val != "0" %}
+width: {{ 100 / (table.params.cols_num.val + 1) }}%;
+{% else%}
+width: {{ 100 / table.params.cols_num.val }}%;
+{% endif %}
+{% else%}
+width: {{ table.params.col_width.val }}px;
+{% endif %}
+
+padding: 0 10px;
+}
+#{{table.view_id}} .ptsCol .ptsTableElementContent .ptsRows {
+background-color: {{ table.params.bg_color.val }};
+}
+#{{table.view_id}} .ptsCol .ptsColHeader {
+                       padding: 15px;
+                   }
+#{{table.view_id}} .ptsCol .ptsColDesc {
+                       padding: 30px 15px;
+                   }
+#{{table.view_id}} .ptsCol .ptsRows {
+border: 1px solid {{ adjBs(table.params.bg_color.val, -35) }};
+border-top-width: 0;
+border-bottom-width: 0;
+}
+#{{table.view_id}} .ptsCol .ptsCell {
+                       padding: 12px;
+border-bottom: 1px solid {{ adjBs(table.params.bg_color.val, -35) }};
+border-top: 1px solid #fff;
+}
+#{{table.view_id}} .ptsCol .ptsCell:last-of-type {
+                       border-bottom: none;
+                   }
+#{{table.view_id}} .ptsCol .ptsColFooter {
+                       padding: 20px;
+border: 1px solid {{ adjBs(table.params.bg_color.val, -35) }};
+background-image: linear-gradient(to bottom, {{adjBs(table.params.bg_color.val, 20)}}, {{adjBs(table.params.bg_color.val, -20)}});
+}
+#{{table.view_id}} .ptsCol .ptsActBtn {
+                       width: 100%;
+                       border-radius: 3px;
+                       cursor: pointer;
+                   }
+#{{table.view_id}} .ptsCol .ptsActBtn .ptsEditArea {
+                       font-size: 1.4em;
+                       width: 100%;
+                       padding: 10px 0;
+                       text-decoration: none !important;
+                       border: none !important;
+                   }
+#{{table.view_id}} .ptsTableDescCol {
+{% if table.params.enb_desc_col.val == 0 %}
+display: none;
+{% endif %}
+}
+#{{table.view_id}} .ptsCol.ptsTableDescCol .ptsColHeader,
+                   #{{table.view_id}} .ptsCol.ptsTableDescCol .ptsColDesc,
+                                      #{{table.view_id}} .ptsCol.ptsTableDescCol .ptsColFooter {
+                                                             visibility: hidden;
+                                                         }
+#{{table.view_id}} p {
+                       margin: 0;
+                   }
+/*Animations*/
+#{{table.view_id}} .ptsCol .ptsTableElementContent,
+                   #{{table.view_id}} .ptsCol .ptsTableElementContent span {
+                                          transition: box-shadow 0.3s ease, margin 0.3s ease, font 0.3s ease;
+                                          -webkit-transition: box-shadow 0.3s ease, margin 0.3s ease, font 0.3s ease;
+                                          -moz-transition: box-shadow 0.3s ease, margin 0.3s ease, font 0.3s ease;
+                                          -ms-transition: box-shadow 0.3s ease, margin 0.3s ease, font 0.3s ease;
+                                          -o-transition: box-shadow 0.3s ease, margin 0.3s ease, font 0.3s ease;
+                                      }
+#{{table.view_id}} .ptsCol.hover .ptsTableElementContent {
+                       z-index: 101;
+                       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                       margin-top: -20px;
+                   }
+#{{table.view_id}} .ptsCol .ptsActBtn:hover {
+background-color: {{ adjBs(table.params.bg_color.val, -35) }};
+}#{{table.view_id}} span, #{{table.view_id}} p {
+                                                 word-break: break-word;
+                                             }
+/*Colors set*/
+#{{table.view_id}} .ptsCol .ptsColHeader {
+color: {{table.params.text_color_header.val}};
+}
+#{{table.view_id}} .ptsCol .ptsColDesc {
+color: {{table.params.text_color_desc.val}};
+}
+#{{table.view_id}} .ptsCol .ptsRows {
+color: {{table.params.text_color.val}};
+}
+/*start for col color 1*/
+#{{table.view_id}} .ptsCol-1 .ptsColHeader {
+                       background-color: rgb(51, 153, 255);
+                   }
+#{{table.view_id}} .ptsCol-1 .ptsColDesc,
+                   #{{table.view_id}} .ptsCol-1 .ptsActBtn:hover {
+                                          background-color: #1076dc;
+                                      }
+#{{table.view_id}} .ptsCol-1 .ptsActBtn {
+                       background-color: rgb(51, 153, 255);
+                   }
+/*end for col color 1*/
+/*start for col color 2*/
+#{{table.view_id}} .ptsCol-2 .ptsColHeader {
+                       background-color: rgb(147, 194, 48);
+                   }
+#{{table.view_id}} .ptsCol-2 .ptsColDesc,
+                   #{{table.view_id}} .ptsCol-2 .ptsActBtn:hover {
+                                          background-color: #709f0d;
+                                      }
+#{{table.view_id}} .ptsCol-2 .ptsActBtn {
+                       background-color: rgb(147, 194, 48);
+                   }
+/*end for col color 2*//*start for col color 4*/
+#{{table.view_id}} .ptsCol-4 .ptsColHeader {
+                       background-color: rgb(240, 61, 0);
+                   }
+#{{table.view_id}} .ptsCol-4 .ptsColDesc,
+                   #{{table.view_id}} .ptsCol-4 .ptsActBtn:hover {
+                                          background-color: #cd1a00;
+                                      }
+#{{table.view_id}} .ptsCol-4 .ptsActBtn {
+                       background-color: rgb(240, 61, 0);
+                   }
+/*end for col color 4*/
+/*start for col color 3*/
+#{{table.view_id}} .ptsCol-3 .ptsColHeader {
+                       background-color: rgba(182,43,38,1);
+                   }
+#{{table.view_id}} .ptsCol-3 .ptsColDesc,
+                   #{{table.view_id}} .ptsCol-3 .ptsActBtn:hover {
+                                          background-color: #930803;
+                                      }
+#{{table.view_id}} .ptsCol-3 .ptsActBtn {
+                       background-color: rgba(182,43,38,1);
+                   }
+/*end for col color 3*/

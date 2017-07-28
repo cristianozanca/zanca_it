@@ -17,6 +17,7 @@ Author: Amministratore
 
 }
 
+
 .subbox_ecommerce {
 
     padding-bottom: 3em;
@@ -26,6 +27,7 @@ Author: Amministratore
 
     min-height: 120px;
 }
+
 
 .search-form .search-submit .icon {
     bottom: 3px;
@@ -45,16 +47,14 @@ Author: Amministratore
 
 }
 
-
-
-.left-box{
+.left-box  {
     float:left;
     padding:20px;
     border:solid 1px lightgrey;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/box_formazione.jpg');
+    background-image: url('assets/voltocz_bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -74,7 +74,7 @@ Author: Amministratore
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/box_ecomm.jpg');
+    background-image: url('assets/voltocz_bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -90,7 +90,7 @@ Author: Amministratore
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/box_supporto.jpg');
+    background-image: url('assets/voltocz_bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -153,14 +153,25 @@ Author: Amministratore
 
 
         z-index: 3;
-        text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01;
-        color: white;
+      /*  text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01; */
+        color: black;
         font-family: Passion One;
         line-height:130px;
-        font-size: 48px;
+        font-size: 30px;
+        float: right;
 
 
 
+    }
+
+    .page-header {
+
+        padding-top: 0em;
+    }
+
+    .site-content {
+
+        padding: 0em;
     }
 
     body {/*color:red;*/
@@ -170,32 +181,19 @@ Author: Amministratore
 
         }
 
+
+
     .left-box{
-        width:100%;
-        height: 260px;
-        background-position: top left;
-        height: 160px;
-
-
-
+        display: none;
      }
 
 
     .center-box{
-        width:100%;
-        height: 160px;
-        background-position: top left ;
-
-
+        display: none;
     }
 
     .right-box{
-        width:100%;
-        height: 260px;
-        background-position: top left;
-        height: 160px;
-        overflow:hidden
-
+        display: none;
 
     }
 
@@ -242,13 +240,40 @@ Author: Amministratore
 
     .boxi-rounded {
 
-       font-size: 30px;
+       font-size: 26px;
        z-index: 3;
-        line-height:80px;
+        line-height:85px;
+        float: right;
 
 
     }
+
+    .titolo-box-ecomm {
+        display: block;
+
+        /*text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01;*/
+        color: black;
+        font-family: Passion One;
+        line-height: 85px;
+        font-size: 22px;
+        float: right;
+
+
+    }
+
+    .center-box h2:before{
+        display: block;
+
+        font-family: "dashicons";
+        content: "\f174";
+        float: right;
+
+    }
+
+
     .site-content{
+
+
 
         padding: 0.5em 0 0;
     }
@@ -258,7 +283,16 @@ Author: Amministratore
         font-size:1.2rem;
     }
 
+    .left-box h2:before{
+
+        content: "\f118";
+        font-family: "dashicons";
+        color: black;
+
+    }
+
     .left-box{
+        display: block;
         float:left;
         width:33%;
         height:120px;
@@ -266,7 +300,10 @@ Author: Amministratore
     }
 
 
+
+
     .center-box{
+        display: block;
         margin:0 auto;
         width:33%;
         height:120px;
@@ -274,7 +311,14 @@ Author: Amministratore
 
     }
 
+    .right-box h2:before {
+        font-family: "dashicons";
+        content: "\f125";
+
+    }
+
     .right-box{
+        display: block;
         float:right;
         width:33%;
         height:120px;
@@ -316,17 +360,47 @@ Author: Amministratore
 
     body {/*color:black;*/
     }
+
+    .page-header {
+
+        padding-top: 1em;
+    }
+
     .boxi-rounded {
 
-
-        line-height:150px;
         z-index: 3;
+        /*text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01;*/
+        color: black;
+        font-family: Passion One;
+        line-height: 130px;
+        font-size: 40px;
+        float: right;
 
 
     }
 
+    .titolo-box-ecomm {
+
+        /*text-shadow: 1px 1px 2px black, 0 0 1em #111111, 0 0 0.2em #fffb01;*/
+        color: black;
+        font-family: Passion One;
+        line-height: 130px;
+        font-size: 32px;
+        float: right;
+
+
+    }
+
+    .left-box h2:before{
+
+        content: "\f118";
+        font-family: "dashicons";
+        color: black;
+
+    }
 
     .left-box {
+
 
         float:left;
         height:175px;
@@ -334,11 +408,28 @@ Author: Amministratore
 
      }
 
+    .center-box h2:before{
 
-    .center-box{
+        font-family: "dashicons";
+        content: "\f174";
+        float: right;
+
+    }
+
+    .center-box {
+
+
+        font-size:10px;
         margin:0 auto;
         height:175px;
 
+
+
+    }
+
+    .right-box h2:before {
+        font-family: "dashicons";
+        content: "\f125";
 
     }
 
