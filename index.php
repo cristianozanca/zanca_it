@@ -33,12 +33,13 @@ get_header(); ?>
 
 	<header class="page-header">
 
-		<div id="Page_Training" style="display: none;" class="content-area">Training</div>
-		
-		<div id="Page_Support" style="display: none;" class="content-area">Support</div>
-		
+		<div id="Page_Training" style="display: none;" class="content-area">Training
+			<?php echo do_shortcode("[post-content id='676']");?> </div>
+		<div id="Page_Support" style="display: none;" class="content-area">Support
+			<?php echo do_shortcode("[post-content id='673']");?>   </div>
 		<div id="Page_Ecommerce" style="display: none;" class="subbox_ecommerce">
-			<?php echo do_shortcode("[supsystic-price-table id='8']");?>
+			<?php echo do_shortcode("[supsystic-price-table id='9']");?>
+
 
 		</div>
 
@@ -66,8 +67,8 @@ get_header(); ?>
 				endwhile;
 
 				the_posts_pagination( array(
-					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span><span class="dashicons dashicons-controls-back"></span>',
+					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span><span class="dashicons dashicons-controls-forward"></span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
 					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
 				) );
 
