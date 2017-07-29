@@ -54,7 +54,7 @@ Author: Amministratore
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/voltocz_bg.jpg');
+    background-image: url('assets/box_training_viso.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -74,7 +74,7 @@ Author: Amministratore
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/voltocz_bg.jpg');
+    background-image: url('assets/box_ecomm_viso.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -90,7 +90,7 @@ Author: Amministratore
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 8px;
-    background-image: url('assets/voltocz_bg.jpg');
+    background-image: url('assets/box_supporto_viso.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top left ;
@@ -148,6 +148,9 @@ Author: Amministratore
         right: 2px;
     }
 
+    .site-title {
+        letter-spacing:0px;
+    }
 
     .boxi-rounded {
 
