@@ -33,11 +33,11 @@ get_header(); ?>
 
 	<header class="page-header">
 
-		<div id="Page_Training" style="display: none;" class="content-area">Training
+		<div id="Page_Training" style="display: none;" class="content-area"><strong>Training</strong>
 			<?php echo do_shortcode("[post-content id='676']");?> </div>
-		<div id="Page_Support" style="display: none;" class="content-area">Support
+		<div id="Page_Support" style="display: none;" class="content-area"><strong>Support</strong>
 			<?php echo do_shortcode("[post-content id='673']");?>   </div>
-		<div id="Page_Ecommerce" style="display: none;" class="subbox_ecommerce">
+		<div id="Page_Ecommerce" style="display: none;" class="subbox_ecommerce"><strong>eCommerce</strong>
 			<?php echo do_shortcode("[supsystic-price-table id='9']");?>
 
 
