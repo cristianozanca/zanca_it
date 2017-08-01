@@ -17,6 +17,16 @@ Author: Amministratore
 
 }
 
+.page.page-one-column .entry-header,
+.twentyseventeen-front-page.page-one-column .entry-header,
+.archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 0em;
+}
+
+.page-header {
+    padding-bottom: 0em;
+}
+
 
 .subbox_ecommerce {
 
@@ -119,6 +129,15 @@ Author: Amministratore
 /* Adjust positioning of edit shortcuts, override style in customize-preview.css */
 @media screen and (min-width: 20em) { /* = 320px */
 
+    .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+        color: #222;
+        font-size: 14px;
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+    }
+
     .has-header-image.twentyseventeen-front-page .custom-header,
     .has-header-video.twentyseventeen-front-page .custom-header,
     .has-header-image.home.blog .custom-header,
@@ -128,6 +147,7 @@ Author: Amministratore
         height: 5vh;
         width: 100%;
     }
+
 
     .menu-toggle {
         font-size: 1.500rem;
@@ -222,7 +242,14 @@ Author: Amministratore
 
 @media screen and (min-width: 48em) { /* = 770px */
 
-
+    .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+        color: #222;
+        font-size: 14px;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+    }
 
 
     .page:not(.home) #content {
