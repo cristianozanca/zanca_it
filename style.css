@@ -9,10 +9,20 @@ Author: Amministratore
 @import url(https://fonts.googleapis.com/css?family=Passion+One);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+
 .main-navigation a {
 
     font-family: roboto;
     font-size: large;
+    background:hsla(0, 0%, 100%, 0) !important;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.main-navigation:hover a {
+
+    color: white;
+
 
 
 }
@@ -128,6 +138,10 @@ Author: Amministratore
 
 /* Adjust positioning of edit shortcuts, override style in customize-preview.css */
 @media screen and (min-width: 20em) { /* = 320px */
+
+    #wpadminbar .yoast-logo.svg {
+        width: 20px;
+}
 
     .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
         color: #222;
