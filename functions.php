@@ -69,9 +69,9 @@ function load_dashicons_front_end() {
 /* page eCommerce two columns span  */
 
 
-add_filter( 'body_class', 'one_column_page_body_classes', 12 );
+add_filter( 'body_class', 'una_colonna_page_body_classes', 12 );
 
-function one_column_page_body_classes( $classes ) {
+function una_colonna_page_body_classes( $classes ) {
 	if ( is_page_template( 'page-templates/page_una_colonna.php' ) && in_array('page-two-column', $classes) ) {
 		unset( $classes[array_search('page-two-column', $classes)] );
 		$classes[] = 'page-one-column';
